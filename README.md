@@ -1,4 +1,4 @@
-# Horacio De La Cruz Jr.
+# Horacio De La Cruz Jr. 
 
 **Data scientist — I find out whether a model actually works, before it costs money.**
 
