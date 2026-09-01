@@ -1,39 +1,61 @@
-## Horacio De La Cruz Jr.
+# Horacio De La Cruz Jr.
 
-I build measurement into machine learning systems. Retrieval and LLM evaluation, applied
-modeling, and sensor analytics at the edge — with the eval harness published alongside the
-model, because a result nobody can re-run isn't a result.
+**Data scientist — I find out whether a model actually works, before it costs money.**
 
-Doctoral research at Capitol Technology University on adversarial and multi-agent
-retrieval-augmented generation. M.S. Data Science, MBA Technology Management, four
-peer-reviewed publications. Miami, FL — open to fully remote.
+Teams ship models that win on a metric nobody chose deliberately. I build the evaluation that
+shows what a model is really doing, publish it alongside the model, and make it re-runnable —
+because a result nobody can reproduce isn't a result.
 
-### What I work on
+Miami, FL · open to fully remote · Python · AWS · retrieval and LLM evaluation · edge/IoT analytics
 
-**Applied ML** — model selection under real decision costs, calibration, and the gap between
-the metric a model wins on and the choice it's actually making.
+---
 
-**Retrieval and LLM evaluation** — cross-lingual retrieval, adversarial robustness, and
-harnesses that survive contact with a corpus somebody tampered with.
+## Problems I get called for
 
-**Sensor and edge analytics** — anomaly detection under hard bandwidth and power budgets, on
-telemetry from a lab I built and run.
+### "Our model looks great offline and disappoints in production."
 
-### Research index
+The metric you tuned and the decision you're actually making are usually two different things.
+I re-score candidate models against the real cost of being wrong.
 
-| Question | Approach | Finding | Repo |
-|---|---|---|---|
-| Does the model with the better score make the cheaper decisions? | Cost-sensitive threshold selection swept across cost ratios 1–1000 on AI4I 2020, against a no-information control | **No.** The better-PR-AUC model is the costlier choice for C = 30–1000 on raw probabilities — and Platt scaling removes the flip entirely. Calibration matters more than model choice. | [predictive-maintenance-eval](https://github.com/hdelacruzjr/predictive-maintenance-eval) |
+**Measured:** on public machine-failure data, the model with the better PR-AUC turned out to be
+the *more expensive* choice across a wide range of cost ratios — and simply calibrating it erased
+the difference entirely. Picking a better model mattered less than calibrating the one already in
+hand.
 
-<!-- Add a row as each study lands. Never before the number exists.
+→ **[predictive-maintenance-eval](https://github.com/hdelacruzjr/predictive-maintenance-eval)**
 
-| How little can you transmit before anomaly detection stops working? | Detection F1 and latency across sampling, quantization and aggregation budgets | | [lorawan-sensing-budget](https://github.com/hdelacruzjr/lorawan-sensing-budget) |
-| What do six open-source scanners actually catch on Python? | Precision, recall and overlap on a labeled corpus; the baseline config follows | | [python-security-baseline](https://github.com/hdelacruzjr/python-security-baseline) |
-| Does cross-lingual retrieval survive an adversarial corpus? | Poisoning-rate degradation curves on public multilingual benchmarks | | [bilingual-rag-eval](https://github.com/hdelacruzjr/bilingual-rag-eval) |
+### "We shipped a RAG assistant and can't tell when it's wrong — or when someone's fooled it."
 
--->
+Retrieval quality is set by whoever wrote the documents, which makes the corpus an attack
+surface. I build harnesses that measure answer quality and adversarial robustness in the same
+run, so degradation shows up before a user finds it.
 
-### How these repos are structured
+→ *Doctoral research at Capitol Technology University on adversarial and multi-agent RAG.
+Public harness in progress.*
+
+### "We're paying to move telemetry we don't need."
+
+At the edge, bandwidth and power are the binding constraints — not accuracy. I map how much
+accuracy survives at a fraction of the payload, so the radio budget becomes a design choice
+instead of a surprise.
+
+→ *In progress, on telemetry from a lab I built and run.*
+
+### "We can't staff a security team, but we need to know our dependencies are safe."
+
+→ **[python-security-baseline](https://github.com/hdelacruzjr/python-security-baseline)** — a
+measured comparison of what open-source scanners actually catch.
+
+---
+
+## Background
+
+PhD candidate in AI at Capitol Technology University, researching adversarial and multi-agent
+retrieval-augmented generation. M.S. Data Science, MBA in Technology Management, four
+peer-reviewed publications. Native Spanish speaker — which is why the retrieval work is
+cross-lingual rather than English-only.
+
+## How to read these repos
 
 Each one opens with a question, reports a measured result with its uncertainty, and ends with
 what would change the conclusion. Results tables are written by the pipeline from the data and
@@ -43,12 +65,6 @@ code produced.
 Engineering rigor is the mechanism here, not the headline. It's what makes the science
 checkable.
 
-### Currently
-
-Building out the portfolio: a bandwidth/accuracy frontier for LoRaWAN sensing, and a measured
-comparison of what open-source security scanners actually catch. The bilingual retrieval
-evaluation harness is the long one and ties to the doctoral work.
-
-### Elsewhere
+## Elsewhere
 
 [LinkedIn](https://www.linkedin.com/in/hdlc) · [veritas-data.io](https://veritas-data.io) · hdelacruzjr@outlook.com
