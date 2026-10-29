@@ -6,7 +6,7 @@ Teams ship models that win on a metric nobody chose deliberately. I build the ev
 shows what a model is really doing, publish it alongside the model, and make it re-runnable —
 because a result nobody can reproduce isn't a result.
 
-Miami, FL · open to fully remote · Python · AWS · retrieval and LLM evaluation · edge/IoT analytics
+Miami, FL · open to fully remote · Python · AWS · retrieval and LLM evaluation · edge/IoT analytics · Medical & Industrial Equipment Telemetry
 
 ---
 
@@ -36,8 +36,7 @@ Public harness in progress.*
 ### "We're paying to move telemetry we don't need."
 
 At the edge, bandwidth and power are the binding constraints — not accuracy. I map how much
-accuracy survives at a fraction of the payload, so the radio budget becomes a design choice
-instead of a surprise.
+accuracy survives at a fraction of the payload across complex medical and industrial equipment telemetry, so the radio budget becomes a design choice instead of a surprise.
 
 → *In progress, on telemetry from a lab I built and run.*
 
@@ -67,4 +66,5 @@ checkable.
 
 ## Elsewhere
 
-[LinkedIn](https://www.linkedin.com/in/hdlc) · [veritas-data.io](https://veritas-data.io) · hdelacruzjr@outlook.com
+[LinkedIn](https://www.linkedin.com/in/hdlc) · [veritas-data.ai](https://veritas-data.ai) ·
+[AWS Marketplace Profile](https://aws.amazon.com/marketplace/seller-profile?id=seller-6qdqd7p26c6y4) · hdelacruzjr@outlook.com
